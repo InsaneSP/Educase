@@ -1,0 +1,178 @@
+/* Reset & Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  overflow-y: hidden;
+  color: #333; /* Set a more neutral text color */
+  line-height: 1.5; /* Better line height for readability */
+}
+
+.highlight {
+  color: #6C25FF; /* Highlight color for important text */
+}
+
+/* Global Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6C25FF, #9B3DFF); /* Soft gradient background */
+  padding: 0 20px;
+}
+
+/* Card Styling */
+.card {
+  width: 100%;
+  max-width: 450px; /* Increase the width of the card */
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer, deeper shadow for depth */
+  padding: 40px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add subtle animation */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
+
+/* Headings and Text */
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1D2226;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form Containers */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 28px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Form Title */
+.signup-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1D2226;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Paragraph Text */
+.signup-container p {
+  font-size: 14px;
+  color: #3E4246;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 20px;
+}
+
+/* Input and Select Fields */
+.input-group input,
+.input-group select {
+  padding: 16px;
+  font-size: 15px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #6C25FF;
+  background-color: #fff;
+}
+
+/* Label Styling */
+.input-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1D2226;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Radio Button Group */
+.input-group .radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Individual Radio Button Styling */
+.input-group .radio-group input {
+  margin-right: 10px;
+}
+
+/* Button Styling */
+.primary {
+  padding: 16px;
+  font-size: 16px;
+  background-color: #6C25FF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.primary:hover {
+  background-color: #5a1fe0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Adding focus effect on inputs for better accessibility */
+input:focus,
+select:focus {
+  border-color: #6C25FF;
+  box-shadow: 0 0 5px rgba(108, 37, 255, 0.5);
+}
+
+/* Smooth Transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects on the Form and Card */
+.signup-container:hover,
+.card:hover {
+  transform: translateY(-5px);
+}
+
